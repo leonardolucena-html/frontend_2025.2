@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Aula 01 - Revisão de HTML</title>
+</head>
+<body>
+  <!-- Web semântica: cabeçalho / navegação -->
+  <header>
+    <h1>Revisão de Tags HTML</h1>
+  </header>
+
+  <nav>
+    <a href="#textos">Textos</a>
+    <a href="#imagens-links">Imagens & Links</a>
+    <a href="#tabela">Tabela</a>
+    <a href="#listas">Listas</a>
+    <a href="#formulario">Formulário</a>
+  </nav>
+
+  <!-- Web semântica: Contéudo principal -->
+  <main>
+    <!-- Títulos h1..h6 -->
+    <article id="textos">
+      <h2>Títulos (h1 a h6)</h2>
+      <h1>Exemplo — h1</h1>
+      <h2>Exemplo — h2</h2>
+      <h3>Exemplo — h3</h3>
+      <h4>Exemplo — h4</h4>
+      <h5>Exemplo — h5</h5>
+      <h6>Exemplo — h6</h6>
+
+      <h3>Parágrafo com várias tags embutidas</h3>
+      <p>
+        Este é um <b>texto em negrito</b>, este é <i>itálico</i>, aqui há um <strong>texto forte</strong> e uma <cite>citação de obra</cite>.
+        Também podemos ter expoentes e índices 
+        como H<sub>2</sub>O e x<sup>2</sup>. <br/>
+        Use essas tags dentro de parágrafos para
+         formatar pequenas partes do conteúdo.
+      </p>
+    </article>
+
+    <!-- Elementos de linha, imagem e link -->
+    <section id="imagens-links">
+      <h2>Quebras, linhas, imagens e links</h2>
+      <p>Exemplo de <code>&lt;br&gt;</code> (quebra de linha):<br>primeira linha<br>segunda linha</p>
+      <p>Exemplo de <code>&lt;hr&gt;</code> (linha horizontal):</p>
+      <hr>
+
+      <h3>Imagem</h3>
+      <!-- Deixe src vazio para você adicionar a imagem depois -->
+      <!-- Caminho relativo -->
+      <img src="public/hero/images.png" alt="Logo da Alpha" width="320" />
+
+      <!-- Caminho absoluto-->
+       <img src="https://cdn.folhape.com.br/img/pc/450/450/dn_arquivo/2020/11/whatsapp-image-2020-11-20-at-155607.jpeg"/>
+
+      <h3>Links (<code>&lt;a&gt;</code>)</h3>
+      <p>Link externo (sem âncora): <a href="https://example.com"  rel="noopener">Visitar example.com</a></p>
+      <p>Link com âncora para esta mesma página: <a href="#formulario">Ir para o formulário</a></p>
+    </section>
+
+    <!-- Semântica: section, aside -->
+    <section>
+      <h2>Mais tags semânticas</h2>
+      <p>As tags seguintes ajudam a organizar o documento: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>,
+      <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code> e <code>&lt;footer&gt;</code>.</p>
+      <aside>
+        <p><strong>Nota:</strong> <code>&lt;aside&gt;</code> costuma conter informações relacionadas, como destaques ou referências.</p>
+      </aside>
+    </section>
+
+    <!-- Tabela com thead tbody tfoot -->
+    <article id="tabela">
+      <h2>Tabela — &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h2>
+      <table border="2">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Função</th>
+            <th>Exemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>h1 - h6</td>
+            <td>Títulos</td>
+            <td>Organizam a hierarquia</td>
+          </tr>
+          <tr>
+            <td>p, b, i</td>
+            <td>Texto e ênfase</td>
+            <td>Usados dentro de parágrafos</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Rodapé da tabela — observações finais</td>
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+
+    <!-- Listas: ul e ol -->
+    <section id="listas">
+      <h2>Listas</h2>
+
+      <h3>Ingredientes (lista não ordenada — &lt;ul&gt;)</h3>
+      <ul>
+        <li>2 xícaras de farinha de trigo</li>
+        <li>1 xícara de açúcar</li>
+        <li>3 ovos</li>
+        <li>1/2 xícara de óleo</li>
+        <li>1 xícara de leite</li>
+        <li>1 colher (sopa) de fermento em pó</li>
+      </ul>
+
+      <h3>Passo a passo (lista ordenada — &lt;ol&gt;)</h3>
+      <ol>
+        <li>Pré-aqueça o forno a 180°C.</li>
+        <li>Bata os ovos com o açúcar até ficar claro.</li>
+        <li>Adicione o óleo e o leite e misture.</li>
+        <li>Incorpore a farinha e, por último, o fermento.</li>
+        <li>Despeje em uma forma untada e leve ao forno por 30–40 minutos.</li>
+      </ol>
+    </section>
+
+    <!-- Formulário -->
+    <article id="formulario">
+      <h2>Formulário de cadastro (action="funcao_de_cadastro")</h2>
+      <form action="funcao_de_cadastro" method="post" enctype="multipart/form-data">
+        <!-- Label e Input (text) -->
+        <label for="nome">Label: Nome</label>
+        <input id="nome" name="nome" type="text" />
+
+        <!-- Text (usarei como texto livre curto) -->
+        <label for="apelido">Text (apelido)</label>
+        <input id="apelido" name="apelido" type="text" />
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input id="email" placeholder="exemplo@gmail.com" required type="email" />
+
+        <!-- Password -->
+        <label for="senha">Password</label>
+        <input id="senha" name="senha" type="password" />
+
+        <!-- Rádio -->
+        <fieldset>
+          <legend>Rádio (gênero)</legend>
+          <label><input type="radio" name="genero" value="f"> Feminino</label>
+          <label><input type="radio" name="genero" value="m"> Masculino</label>
+          <label><input type="radio" name="genero" value="o"> Outro</label>
+        </fieldset>
+
+        <!-- Checkbox -->
+        <label><input type="checkbox" name="aceito" /> Aceito os termos</label>
+
+        <!-- File -->
+        <label for="arquivo">File (enviar arquivo)</label>
+        <input id="arquivo" name="arquivo" type="file" />
+
+        <!-- Date -->
+        <label for="nascimento">Date (data de nascimento)</label>
+        <input id="nascimento" name="nascimento" type="date" />
+
+        <!-- Url -->
+        <label for="site">Url (site pessoal)</label>
+        <input id="site" name="site" type="url" />
+
+        <!-- Select / Option -->
+        <label for="cidade">Select (cidade)</label>
+        <select id="cidade" name="cidade">
+          <option value="">-- escolha --</option>
+          <option value="recife">Recife</option>
+          <option value="sp">São Paulo</option>
+          <option value="rj">Rio de Janeiro</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="bio">Textarea (breve apresentação)</label>
+        <textarea id="bio" name="bio" rows="4"></textarea>
+
+        <!-- Buttons: submit, reset e button simples -->
+        <p>
+          <input type="submit" value="Enviar (Submit)" />
+          <input type="reset" value="Limpar (Reset)" />
+          <button type="button" onclick="alert('Botão comum clicado')">Button</button>
+        </p>
+      </form>
+    </article>
+
+  </main>
+
+  <!-- Web semântica: rodapé -->
+  <footer>
+    <p>Rodapé - Aula 01</p>
+  </footer>
+
+</body>
+</html>
