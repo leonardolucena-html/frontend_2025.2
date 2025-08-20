@@ -136,6 +136,17 @@ article {
     border-top: 2px solid #ccc;
 }
 
+/*
+*/
+.list__projetcts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
 /* Contato */
 .contact{
     display: flex;
@@ -185,4 +196,45 @@ footer{
     display: flex;
     align-items: center;
     justify-content: end;
+}
+
+/*Card*/
+.card__project{
+    width: 20rem;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.card__project:hover{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.card__project img {
+    width: 100%;
+}
+
+.card__title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    text-align: center;
+} 
+
+.card__body{
+    padding: 0.8rem;
+    text-align: justify;
+}
+
+.card__footer > img{
+    width: 1.4rem;
+}
+
+.card__footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 4px;
+    padding: 0 1rem 1rem 0;
 }
