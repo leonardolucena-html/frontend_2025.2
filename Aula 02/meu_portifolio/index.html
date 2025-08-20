@@ -6,178 +6,192 @@
     <title>Portifolio</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
-      <nav>
-            <img class="logo" src="./public/logo 1.png" alt="Logo do portifólio" />
-            <div class="links">
-                <ul class="ancoras">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#my__tech">Tech Stack</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="redes__sociais">
-                    <img src="./public/x.png" alt="">
-                    <img src="./public/x.png" />
-                    <img src="./public/linkedin.png" />
-                </div>
-            </div>
-        </nav>
+    <nav>
+      <img class="logo" src="./public/logo 1.png" alt="Logo do portifólio" />
+      <div class="links">
+        <ul class="ancoras">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#my__tech">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="redes__sociais">
+          <img src="./public/x.png" alt="" />
+          <img src="./public/x.png" />
+          <img src="./public/linkedin.png" />
+        </div>
+      </div>
+    </nav>
 
-        <main>
-            <section id="home" class="container">
-                <div class="apresentacao">
-                    <h1>Hi <span>👋</span>,<br />
-                        My name is <br />
-                        <strong>{Nome}</strong><br />
-                        I build things for web
-                    </h1>
+    <main>
+      <section id="home" class="container">
+        <div class="apresentacao">
+          <h1>
+            Hi <span>👋</span>,<br />
+            My name is <br />
+            <strong>{Nome}</strong><br />
+            I build things for web
+          </h1>
+        </div>
+        <img
+          class="meu__perfil"
+          src="./public/perfil.png"
+          alt="Minha foto de perfil"
+        />
+      </section>
 
-                </div>
-                <img class="meu__perfil" src="./public/perfil.png" alt="Minha foto de perfil">
-            </section>
+      <article id="my__tech" class="my__tech --separador">
+        <div class="data">
+          <h2>My Tech Stack</h2>
+          <h3>Technologies I’ve been working with recently</h3>
+        </div>
+        <div class="tecnologies">
+          <img src="./public/akar-icons_github-fill.png" alt="Ícone GitHub" />
+          <img src="./public/cib_greensock.png" alt="Ícone GreenSock" />
+          <img src="./public/logos_bootstrap.png" alt="Ícone Bootstrap" />
+          <img src="./public/logos_git-icon.png" alt="Ícone Git" />
+          <img src="./public/logos_react.png" alt="Ícone React" />
+          <img src="./public/logos_sass.png" alt="Ícone Sass" />
+          <img src="./public/Vector.png" alt="Ícone Vetor" />
+          <img src="./public/vscode-icons_file-type-css.png" alt="Ícone CSS" />
+          <img
+            src="./public/vscode-icons_file-type-html.png"
+            alt="Ícone HTML"
+          />
+          <img
+            src="./public/vscode-icons_file-type-js-official.png"
+            alt="Ícone JavaScript"
+          />
+          <img
+            src="./public/vscode-icons_file-type-tailwind.png"
+            alt="Ícone Tailwind CSS"
+          />
+          <img
+            src="./public/vscode-icons_file-type-vscode.png"
+            alt="Ícone VSCode"
+          />
+        </div>
+      </article>
 
-             <article id="my__tech" class="my__tech --separador">
-                <div class="data">
-                    <h2>My Tech Stack</h2>
-                    <h3> Technologies I’ve been working with recently</h3>
-                </div>
-                <div class="tecnologies">
-                    <img src="./public/akar-icons_github-fill.png" alt="Ícone GitHub">
-                    <img src="./public/cib_greensock.png" alt="Ícone GreenSock">
-                    <img src="./public/logos_bootstrap.png" alt="Ícone Bootstrap">
-                    <img src="./public/logos_git-icon.png" alt="Ícone Git">
-                    <img src="./public/logos_react.png" alt="Ícone React">
-                    <img src="./public/logos_sass.png" alt="Ícone Sass">
-                    <img src="./public/Vector.png" alt="Ícone Vetor">
-                    <img src="./public/vscode-icons_file-type-css.png" alt="Ícone CSS">
-                    <img src="./public/vscode-icons_file-type-html.png" alt="Ícone HTML">
-                    <img src="./public/vscode-icons_file-type-js-official.png" alt="Ícone JavaScript">
-                    <img src="./public/vscode-icons_file-type-tailwind.png" alt="Ícone Tailwind CSS">
-                    <img src="./public/vscode-icons_file-type-vscode.png" alt="Ícone VSCode">
-                </div>
-            </article>
-
-             <article id="projects" class="--separador">
-                <div class="data">
-                    <h2>Projects</h2>
-                    <h3>Things I’ve built so far</h3>
-                </div>
-                <div class="list__projetcts">
-                    <div class="card__project" onclick="seeProject('Projeto1')">
-                        <img src="./public/Rectangle 4.png" />
-                        <p class="card__title">
-                            Titulo do projeto
-                        </p>
-                        <p class="card__body">
-                            This is sample project
-                            description random things
-                            are here in description This
-                            is sample project lorem ipsum
-                            generator for dummy content
-                        </p>
-
-                        <div class="card__footer">
-                            <img src="./public/git.svg" alt="" srcset="">
-                            <a href="">Link para o projeto</a>
-                        </div>
-                    </div> 
-                    
-                    <div class="card__project" onclick="seeProject('Projeto1')">
-                        <img src="./public/Rectangle 4.png" />
-                        <p class="card__title">
-                            Titulo do projeto
-                        </p>
-                        <p class="card__body">
-                            This is sample project
-                            description random things
-                            are here in description This
-                            is sample project lorem ipsum
-                            generator for dummy content
-                        </p>
-
-                        <div class="card__footer">
-                            <img src="./public/git.svg" alt="" srcset="">
-                            <a href="">Link para o projeto</a>
-                        </div>
-                    </div> 
-
-                    <div class="card__project" onclick="seeProject('Projeto1')">
-                        <img src="./public/Rectangle 4.png" />
-                        <p class="card__title">
-                            Titulo do projeto
-                        </p>
-                        <p class="card__body">
-                            This is sample project
-                            description random things
-                            are here in description This
-                            is sample project lorem ipsum
-                            generator for dummy content
-                        </p>
-
-                        <div class="card__footer">
-                            <img src="./public/git.svg" alt="" srcset="">
-                            <a href="">Link para o projeto</a>
-                        </div>
-                    </div> 
-
-                    <div class="card__project" onclick="seeProject('Projeto1')">
-                        <img src="./public/Rectangle 4.png" />
-                        <p class="card__title">
-                            Titulo do projeto
-                        </p>
-                        <p class="card__body">
-                            This is sample project
-                            description random things
-                            are here in description This
-                            is sample project lorem ipsum
-                            generator for dummy content
-                        </p>
-
-                        <div class="card__footer">
-                            <img src="./public/git.svg" alt="" srcset="">
-                            <a href="">Link para o projeto</a>
-                        </div>
-                    </div> 
-
-                    <div class="card__project" onclick="seeProject('Projeto1')">
-                        <img src="./public/Rectangle 4.png" />
-                        <p class="card__title">
-                            Titulo do projeto
-                        </p>
-                        <p class="card__body">
-                            This is sample project
-                            description random things
-                            are here in description This
-                            is sample project lorem ipsum
-                            generator for dummy content
-                        </p>
-
-                        <div class="card__footer">
-                            <img src="./public/git.svg" alt="" srcset="">
-                            <a href="">Link para o projeto</a>
-                        </div>
-                    </div> 
-                </div>
-            </article>
-
-            <article id="contact" class="contact --separador">
-                <img class="logo" src="./public/logo 1.png" alt="Logo do portifólio" />
-                <p class="--botao" onclick="redirectWhatsApp()">
-                    <img src="./public/wpp.png" alt="">
-                    Entrar em contato!</p>
-            </article>
-        </main>
-
-        <footer class="--separador">
-            <p>
-                Designed by Pavan MG with Love & Coffee
+      <article id="projects" class="--separador">
+        <div class="data">
+          <h2>Projects</h2>
+          <h3>Things I’ve built so far</h3>
+        </div>
+        <div class="list__projetcts">
+          <div class="card__project" onclick="seeProject('Projeto1')">
+            <img src="./public/Rectangle 4.png" />
+            <p class="card__title">Titulo do projeto</p>
+            <p class="card__body">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
             </p>
-        </footer>
+
+            <div class="card__footer">
+              <img src="./public/git.svg" alt="" srcset="" />
+              <a href="">Link para o projeto</a>
+            </div>
+          </div>
+
+          <div class="card__project" onclick="seeProject('Projeto1')">
+            <img src="./public/Rectangle 4.png" />
+            <p class="card__title">Titulo do projeto</p>
+            <p class="card__body">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </p>
+
+            <div class="card__footer">
+              <img src="./public/git.svg" alt="" srcset="" />
+              <a href="">Link para o projeto</a>
+            </div>
+          </div>
+
+          <div class="card__project" onclick="seeProject('Projeto1')">
+            <img src="./public/Rectangle 4.png" />
+            <p class="card__title">Titulo do projeto</p>
+            <p class="card__body">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </p>
+
+            <div class="card__footer">
+              <img src="./public/git.svg" alt="" srcset="" />
+              <a href="">Link para o projeto</a>
+            </div>
+          </div>
+
+          <div class="card__project" onclick="seeProject('Projeto1')">
+            <img src="./public/Rectangle 4.png" />
+            <p class="card__title">Titulo do projeto</p>
+            <p class="card__body">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </p>
+
+            <div class="card__footer">
+              <img src="./public/git.svg" alt="" srcset="" />
+              <a href="">Link para o projeto</a>
+            </div>
+          </div>
+
+          <div class="card__project" onclick="seeProject('Projeto1')">
+            <img src="./public/Rectangle 4.png" />
+            <p class="card__title">Titulo do projeto</p>
+            <p class="card__body">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </p>
+
+            <div class="card__footer">
+              <img src="./public/git.svg" alt="" srcset="" />
+              <a href="">Link para o projeto</a>
+            </div>
+          </div>
+
+          <div class="card__project" onclick="seeProject('Projeto1')">
+            <img src="./public/Rectangle 4.png" />
+            <p class="card__title">Titulo do projeto</p>
+            <p class="card__body">
+              This is sample project description random things are here in
+              description This is sample project lorem ipsum generator for dummy
+              content
+            </p>
+
+            <div class="card__footer">
+              <img src="./public/git.svg" alt="" srcset="" />
+              <a href="">Link para o projeto</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="contact" class="contact --separador">
+        <img class="logo" src="./public/logo 1.png" alt="Logo do portifólio" />
+        <p class="--botao" onclick="redirectWhatsApp()">
+          <img src="./public/wpp.png" alt="" />
+          Entrar em contato!
+        </p>
+      </article>
+    </main>
+
+    <footer class="--separador">
+      <p>Designed and built by Pavan MG with Love & Coffee</p>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
