@@ -136,6 +136,47 @@ article {
     border-top: 2px solid #ccc;
 }
 
+/* Contato */
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact > .logo{
+    height: 8rem;
+}
+
+.--botao {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background: linear-gradient(135deg, #25d366, #128c7e); 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    border: none; 
+    width: fit-content; 
+    margin: 10px 0; 
+}
+
+.--botao img {
+    width: 24px;
+    margin-right: 10px; 
+}
+
+.--botao:hover {
+    background: linear-gradient(135deg, #128c7e, #25d366);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
 /* Rodapé*/
 footer{
     height: 2rem;
