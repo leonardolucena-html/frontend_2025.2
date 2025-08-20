@@ -1,0 +1,16 @@
+body{
+    margin: 0 auto
+}
+
+h1 {
+    position: relative;
+    color: royalblue;
+    margin: 30px;
+    padding: 50px;
+}
+
+.linkSobre, .linkContato{
+    font-size: 25px;
+    color: black;
+    background-color: green;
+}
