@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function alterarElementos() {
+        document.getElementById("paragrafo1").innerHTML =
+          "Novo <strong>texto em negrito</strong> Em aula!";
+        document.getElementById("paragrafo2").textContent =
+          "Novo texto simples sem HTML em aula";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Alterando elementos com JavaScript</h2>
+
+    <div id="paragrafo1">Texto original do parágrafo 1
+        <h2>Teste</h2>
+        <h3>Teste 3</h3>
+    </div>
+    <p id="paragrafo2">Texto original do parágrafo 2</p>
+
+    <div id="div1">Conteúdo da div</div>
+
+    <input type="text" id="input1" value="Valor original" />
+
+    <button onclick="alterarElementos()">Alterar Conteúdo</button>
+  </body>
+</html>
