@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="titulo">Olá Mundo</p>
+    <!--<p class="texto">Exemplo de parágrafo</p>
+    <button>Clique aqui</button>
+    -->
+  </body>
+
+  <script>
+    let tituloNoJS = document.getElementById("titulo");
+    //tituloNoJS.textContent = "Olá Mundo do JavaScript";
+    tituloNoJS.innerHTML = "Olá Mundo do <strong>JavaScript</strong>".toUpperCase();
+    //let paragrafos = document.getElementsByClassName("texto");
+
+    //let botao = document.querySelector("button");
+  </script>
+</html>
